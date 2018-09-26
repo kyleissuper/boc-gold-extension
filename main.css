@@ -1,0 +1,94 @@
+#boc_gold_container,
+#boc_gold_name,
+#boc_gold_discount,
+#boc_gold_description,
+#boc_gold_cta,
+#boc_gold_close {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+#boc_gold_container {
+  position: fixed;
+  z-index: 999999;
+  top: 30px;
+  right: 30px;
+  width: 320px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 26px #eeeeee;
+  padding: 1.5em 5em 1.6em 1.5em;
+  border: 1px solid #dadada;
+}
+#boc_gold_name::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: .8em;
+  top: 1.1em;
+  width: 48px;
+  height: 48px;
+  background: url("chrome-extension://__MSG_@@extension_id__/img/icon48.png");
+}
+#boc_gold_name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+#boc_gold_discount {
+  margin-top: 3px;
+  font-size: 12px;
+}
+#boc_gold_description {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+#boc_gold_cta {
+  font-weight: normal;
+  cursor: pointer;
+  user-select: none;
+  transition: .3s ease-out;
+  text-decoration: none;
+  color: #fff;
+  background: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#boc_gold_cta:hover {
+  background: #2bbbad;
+  box-shadow:
+    0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+#boc_gold_close {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  color: #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid #dadada;
+}

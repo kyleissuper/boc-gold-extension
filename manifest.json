@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Bank of China | Gold",
+    "version": "0.1",
+    "description": "BOC-NUS Hackathon prototype extension. Automatically suggests Bank of China (Singapore) exclusive deals.",
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "browser_action": {
+        "default_title": "Bank of China | Gold",
+        "default_icon": {
+            "16": "img/icon16.png",
+            "48": "img/icon48.png",
+            "128": "img/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"],
+            "css": ["main.css", "font.css"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "*png"
+    ]
+}
